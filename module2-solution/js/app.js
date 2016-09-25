@@ -66,8 +66,7 @@
 
         //Remove the items from the buyitems array and add the same item to the bought items array
         service.removeFromBuyAddToBought = function (itemIndex) {
-            boughtItem.push(buyItems[itemIndex]);
-            console.log(boughtItem);
+            boughtItem.push(buyItems[itemIndex]);            
             buyItems.splice(itemIndex, 1);
         }
 
