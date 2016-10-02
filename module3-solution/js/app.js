@@ -35,14 +35,13 @@
             });
                         
             promise.then(function (response) {
-                console.log("I m in");
-                for (var i = 0; i < response.data.length; i++) {
-                    if (response.data.description == searchTerm) {
+                console.log(response.data.menu_items);
+                for (var i = 0; i < response.data.menu_items.length ; i++) {
+                    if (response.data.menu_items.description == searchTerm) {
                         foundItems.push(response.data[i]);
                     }
-                }
-                
-                
+                } 
+                console.log(foundItems);                          
                 return foundItems;
             }).catch(function (error) {
                 return error;
