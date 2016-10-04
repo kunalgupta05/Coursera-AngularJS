@@ -1,10 +1,20 @@
 <div>
   <ol>
     <b>
-      <li ng-repeat="item in found">
-        {{ item.name }} ({{item.short_name}}) {{ item.description }}
-        <button ng-click="onRemove({index:$index});">Don't want this one!</button>
+      <div class="row">
+        <div class="col-md-12">
+      <li ng-repeat="item in found">        
+          <div class="col-md-8">
+              {{ item.name }} ({{item.short_name}}) {{ item.description }}<br/><br/>
+          </div>
+          
+          <div class="col-md-4">
+            <button ng-click="onRemove({index:$index});">Don't want this one!</button>
+          </div>                 
       </li>
+      
+      </div>
+      </div>  
     </b>
-  </ol>  
+  </ol>
 </div>

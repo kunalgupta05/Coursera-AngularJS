@@ -17,8 +17,7 @@
             }
         };
         return ddo;
-    }
-    
+    }    
    
     NarrowItDownController.$inject = ['MenuSearchService']
     function NarrowItDownController(MenuSearchService) {
@@ -88,8 +87,5 @@
             foundItems.splice(itemIndex, 1);
         };
     }
-
-
-
 
 })();
