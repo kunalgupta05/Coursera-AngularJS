@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MenuApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Las Noches Restaurant</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+</head>
+<body>
+    
+    <h1>Welcome to Las Noches Restaurante</h1>
+    
+    <ui-view></ui-view>        
+   
+    <!--Scripts-->        
+        <!--Modules-->        
+        <script src="src/menuapp.module.js"></script>
+        <script src="src/data.module.js"></script>
+        
+        <!--Routes-->
+        <script src="src/routes.js"></script>
+        
+        <!--'MenuApp' module artifacts-->
+        <script src="src/categories.component.js"></script>
+        <script src="src/items.component.js"></script>
+        <script src="src/categories.controller.js"></script>
+        <script src="src/items.controller.js"></script>
+        <script src="src/menudata.service.js"></script>        
+   <!--/Scripts-->                  
+    
+</body>
+</html>
